@@ -18,7 +18,7 @@ const LogoContainer = styled.div`
     font-weight: bolder;
     font-size: 4rem;
 
-    border: 2px solid ${({ theme }) => theme.colors.secondary};
+    /* border: 2px solid ${({ theme }) => theme.colors.secondary}; */
     padding: 0.5rem 1.2rem;
     border-radius: 2rem;
 

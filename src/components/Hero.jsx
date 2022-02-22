@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
+import { faRoute } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
@@ -9,10 +11,12 @@ const Hero = () => {
           Hi! I'm <span className="main__jacob">Jacob</span>!
         </h2>
         <p className="header__sub">
-          I am a Front-End Developer and I love to create awesome websites just
-          like this one!
+          I love to create awesome websites just like this one!
         </p>
-        <span className="header__cleveland">Cleveland, OH</span>
+        <span className="header__cleveland">
+          Cleveland, OH
+          <FontAwesomeIcon icon={faRoute} className="icon" />
+        </span>
       </HeroText>
     </HeroContainer>
   );
@@ -20,18 +24,10 @@ const Hero = () => {
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    69% 83%,
-    44% 83%,
-    0 100%,
-    0 0
-  );
 
-  padding: 10rem 4rem 15rem;
+  padding: 10rem 5rem 12rem;
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 93%, 30% 95%, 0 100%);
 `;
 
 const HeroText = styled.header`
@@ -42,23 +38,33 @@ const HeroText = styled.header`
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.fonts.main};
   .header__main {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: calc(3vw + 2rem);
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.1rem;
+    display: block;
+
     .main__jacob {
-      font-size: 3.5rem;
+      font-size: calc(3vw + 3rem);
       color: ${({ theme }) => theme.colors.secondary};
+      letter-spacing: 0.5rem;
     }
   }
   .header__sub {
-    font-size: 1.3rem;
+    font-size: calc(0.5vw + 1.5rem);
     opacity: 0.8;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    /* max-width: 70%; */
+    line-height: 1.6;
   }
   .header__cleveland {
     color: ${({ theme }) => theme.colors.secondary};
-    opacity: 0.3;
+    opacity: 0.4;
     letter-spacing: 0.1rem;
     text-shadow: 0 0 5px ${({ theme }) => theme.colors.secondary};
+    .icon {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+    }
   }
 `;
 
