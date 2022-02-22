@@ -1,20 +1,16 @@
-export const DarkBg = {
+export const MainTheme = {
+    colors: {
+        bgDark:"rgb(11, 12, 16)",
+        bgGrey: "rgb(32, 40, 53)",
+        bgNavbar:"rgba(11, 12, 16, 0.6)",
+        text:"rgb(248, 252, 255)",
+        secondary: "rgb(100, 253, 240)",
+        accent: "rgb(70, 162, 159)",
+    },
+    fonts: {
+        main:"'Roboto Mono', sans-serif",
+        logo: "'Oooh Baby', sans-serif"
+    }
 
-    body:"rgb(11, 12, 16)",
-    text:"rgb(248, 252, 255)",
-    accentColor: "rgb(100, 253, 240)",
-    fontFamily:"'Roboto Mono', sans-serif",
-    coolFont: "'Oooh Baby', sans-serif",
-    darkShadow : "rgb(32, 40, 53)",
-    accentShadow: "rgb(70, 162, 159)",
 }
 
-export const GreyBg = {
-    body:"rgb(32, 40, 53)",
-    text:"rgb(248, 252, 255)",
-    accentColor: "rgb(100, 253, 240)",
-    fontFamily:"'Roboto Mono', sans-serif",
-    coolFont: "'Oooh Baby', sans-serif",
-    darkShadow : "rgb(11, 12, 16)",
-    accentShadow: "rgb(70, 162, 159)",
-}
