@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import { faRoute } from "@fortawesome/free-solid-svg-icons";
+import { faLocationPin, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
     <HeroContainer>
+      <span className="code-icon icon">{"</>"}</span>
       <HeroText>
         <h2 className="header__main">
           Hi! I'm <span className="main__jacob">Jacob</span>!
@@ -15,7 +16,7 @@ const Hero = () => {
         </p>
         <span className="header__cleveland">
           Cleveland, OH
-          <FontAwesomeIcon icon={faRoute} className="icon" />
+          <FontAwesomeIcon icon={faLocationPin} className="icon" />
         </span>
       </HeroText>
     </HeroContainer>
@@ -25,9 +26,23 @@ const Hero = () => {
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
 
-  padding: 10rem 5rem 12rem;
+  padding: calc(8vw + 4rem) 7rem calc(7vw + 6rem);
 
   clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 93%, 30% 95%, 0 100%);
+
+  .code-icon {
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 10rem;
+    opacity: 0.2;
+    font-family: ${({ theme }) => theme.fonts.main};
+    text-shadow: 0 0 20px ${({ theme }) => theme.colors.secondary};
+
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+
+    transform: rotate(0.1turn);
+  }
 `;
 
 const HeroText = styled.header`
@@ -61,8 +76,11 @@ const HeroText = styled.header`
     opacity: 0.4;
     letter-spacing: 0.1rem;
     text-shadow: 0 0 5px ${({ theme }) => theme.colors.secondary};
+
+    display: flex;
+
     .icon {
-      margin-left: 0.5rem;
+      margin: 0.25rem 0.3rem 0;
       font-size: 0.8rem;
     }
   }

@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { ThemeConsumer } from "styled-components";
 import SectionHeader from "../subComponents/SectionHeader";
+import SectionSubHeader from "../subComponents/SectionSubHeader";
 
 const Projects = () => {
   return (
     <ProjectsContainer>
       <SectionHeader>Projects</SectionHeader>
+      <SectionSubHeader>What Do I Do?</SectionSubHeader>
     </ProjectsContainer>
   );
 };
@@ -24,6 +26,8 @@ const ProjectsContainer = styled.div`
     0 0
   );
   padding: 0.5rem 0;
+  padding-left: 2rem;
+
   border: 2px solid red;
 `;
 

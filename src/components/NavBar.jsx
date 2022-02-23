@@ -16,11 +16,16 @@ const NavBar = () => {
 
 const NavBarContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.bgNavbar};
-  color: black;
   padding: 1rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
 `;
 
 export default NavBar;
