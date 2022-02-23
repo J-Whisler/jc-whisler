@@ -4,6 +4,7 @@ import SectionHeader from "../subComponents/SectionHeader";
 import SectionSubHeader from "../subComponents/SectionSubHeader";
 
 import CartoonMe from "../assets/cartoon-me.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -15,21 +16,58 @@ const About = () => {
         <div className="about-grid">
           <div className="grid-left">
             <p className="grid-left__paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-              inventore odio quis dolor odit impedit itaque autem, nulla
-              suscipit aut sint voluptatibus in alias, iure ipsa neque
-              voluptates. Provident tenetur, corrupti ab ipsam officia corporis
-              veritatis! Veritatis cum quisquam eos in exercitationem possimus
-              ratione eveniet vero, culpa soluta, aperiam autem!
+              I am a 28 year old Front-End Web Developer and designer. I got my
+              start into web development at the{" "}
+              <a href="https://bootcamp.case.edu/coding/" className="p-link">
+                Case Western Reserve Coding Bootcamp
+              </a>{" "}
+              at{" "}
+              <a href="https://case.edu/" className="p-link">
+                CWRU
+              </a>{" "}
+              in Cleveland, OH. I really enjoy creating visually pleasing
+              webpages that are easy to use with tools such as{" "}
+              <a href="" className="p-link">
+                HTML
+              </a>
+              ,{" "}
+              <a href="" className="p-link">
+                CSS
+              </a>
+              ,{" "}
+              <a href="" className="p-link">
+                Javascript
+              </a>
+              , and{" "}
+              <a href="" className="p-link">
+                React
+              </a>{" "}
+              as well as different animation tools like{" "}
+              <a href="" className="p-link">
+                Framer Motion
+              </a>{" "}
+              and{" "}
+              <a href="" className="p-link">
+                GSAP
+              </a>{" "}
+              to bring web pages to life.
             </p>
-            <p className="grid-left__paragraph">
-              Expedita eos at quisquam? Adipisci vel illo rem iusto fuga ad
-              distinctio debitis, laborum rerum odio alias in, laboriosam
-              deserunt. Tenetur ratione recusandae omnis reiciendis impedit
-              corporis facilis consequuntur asperiores rem odio molestiae
-              quaerat dolorem, vel consequatur similique obcaecati iste fugit
-              atque dicta eum maiores ipsa enim provident saepe. Non?
+            <p className="grid-left__paragraph p-bottom">
+              I am open to professional and freelance development opportunities,
+              so if you would like to talk to me more about how I could help
+              you, please feel free to contact me!
             </p>
+
+            <div className="grid-left__button">
+              <Link to="/contact" className="link">
+                Get In Touch...
+              </Link>
+              <span className="link-borderBottom"></span>
+            </div>
+
+            <span className="grid-left__subParagraph">
+              Or keep scrolling to see more!
+            </span>
           </div>
           <div className="grid-right">
             <img src={CartoonMe} className="grid-right__image" alt="Me" />
@@ -42,8 +80,8 @@ const About = () => {
 
 const AboutContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgGrey};
-  margin-top: 8rem;
-  margin-bottom: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
   padding-left: 2rem;
   padding-right: 5rem;
 
@@ -77,9 +115,62 @@ const AboutContent = styled.div`
     }
     .grid-left {
       .grid-left__paragraph {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: ${({ theme }) => theme.fonts.main};
         color: ${({ theme }) => theme.colors.text};
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        &.p-bottom {
+          opacity: 0.8;
+          margin-bottom: 2.5rem;
+        }
+        .p-link {
+          color: ${({ theme }) => theme.colors.secondary};
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      .grid-left__button {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+
+        margin-bottom: 2rem;
+
+        cursor: pointer;
+
+        .link {
+          color: ${({ theme }) => theme.colors.secondary};
+          text-decoration: none;
+          font-family: ${({ theme }) => theme.fonts.main};
+          font-size: 1.2rem;
+          transition: all 0.3s linear;
+        }
+        .link-borderBottom {
+          border: 2px solid ${({ theme }) => theme.colors.accent};
+          border-radius: 1rem;
+          background: ${({ theme }) => theme.colors.accent};
+          padding: 0.01rem 0;
+          transition: all 0.3s linear;
+        }
+        &:hover {
+          .link {
+            color: ${({ theme }) => theme.colors.accent};
+          }
+          .link-borderBottom {
+            border: 2px solid ${({ theme }) => theme.colors.secondary};
+            background: ${({ theme }) => theme.colors.secondary};
+          }
+        }
+      }
+      .grid-left__subParagraph {
+        color: ${({ theme }) => theme.colors.accent};
+        font-family: ${({ theme }) => theme.fonts.main};
+        letter-spacing: 0.2rem;
+        opacity: 0.6;
       }
     }
     .grid-right {

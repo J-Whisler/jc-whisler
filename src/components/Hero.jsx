@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import { faLocationPin, faCode } from "@fortawesome/free-solid-svg-icons";
+import { keyframes } from "styled-components";
 
 const Hero = () => {
   return (
@@ -19,9 +20,35 @@ const Hero = () => {
           <FontAwesomeIcon icon={faLocationPin} className="icon" />
         </span>
       </HeroText>
+      <ScrollIcon>
+        <div className="iconContainer">
+          <div className="scrollIcon__dot dot1"></div>
+          <div className="scrollIcon__dot dot2"></div>
+          <div className="scrollIcon__dot dot3"></div>
+        </div>
+      </ScrollIcon>
     </HeroContainer>
   );
 };
+
+// keyframes
+const dotAnimation = keyframes`
+    0% {
+        opacity: 0.5;
+    }
+    10% {
+        opacity: 0.9;
+        transform: scale(1.12);
+        box-shadow: 0 0 3px ${({ theme }) => theme.colors.text};
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+
+`;
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
@@ -82,6 +109,53 @@ const HeroText = styled.header`
     .icon {
       margin: 0.25rem 0.3rem 0;
       font-size: 0.8rem;
+    }
+  }
+`;
+
+const ScrollIcon = styled.div`
+  border-radius: 100%;
+  padding: 0.2rem;
+  margin: 0.25rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  top: 4rem;
+  /* justify-content: center; */
+
+  /* opacity: 0.5; */
+  .iconContainer {
+    border: 2px solid ${({ theme }) => theme.colors.text};
+    border-radius: 2rem;
+    padding: 0.3rem;
+
+    .scrollIcon__dot {
+      background: ${({ theme }) => theme.colors.text};
+      padding: 0.2rem;
+      border-radius: 100%;
+    }
+
+    .dot1 {
+      margin-bottom: 0.4rem;
+      animation-name: ${dotAnimation};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    .dot2 {
+      margin-bottom: 0.4rem;
+      animation-name: ${dotAnimation};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.2s;
+    }
+    .dot3 {
+      animation-name: ${dotAnimation};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.3s;
     }
   }
 `;
