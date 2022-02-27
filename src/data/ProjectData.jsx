@@ -1,5 +1,5 @@
 import {
-  faRunning,
+  faHashtag,
   faSun,
   faGamepad,
   faTv,
@@ -15,9 +15,9 @@ export const ProjectData = [
     id: 1,
     name: "Forest City Runs",
     subName: "Social Media/Blogging Application",
-    icon: faRunning,
+    icon: faHashtag,
     description:
-      "This is a full stack social media/blog site for the Cleveland running community.  It features a login and user authentication system that then allows users to share/delete posts and see other user's posts in which they can like or comment on any post.  Also able to unlike post and delete posts/comments that you made.  Also features a user profile page.",
+      "A full stack social media/blog site for the Cleveland running community.  It features a login and user authentication system that then allows users to share/delete posts and see other user's posts in which they can like or comment on any post.  Also able to unlike post and delete posts/comments that you made.  Also features a user profile page.",
     toolsUsed: [
       {
         toolName: "React",
@@ -60,8 +60,8 @@ export const ProjectData = [
         link: "https://www.npmjs.com/package/bcrypt",
       },
     ],
-    buttonLink: "https://fcruns.netlify.app/",
-    githubLink: "https://github.com/J-Whisler/forest-city-runs",
+    demoLink: "https://fcruns.netlify.app/",
+    repoLink: "https://github.com/J-Whisler/forest-city-runs",
     projectImage: FCRuns,
     card: 2,
   },
@@ -71,7 +71,7 @@ export const ProjectData = [
     subName: "Weather Application",
     icon: faSun,
     description:
-      "This is a basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather Api (link below) to return users the current temperature and weather conditions in their desired city.  Also features changing background color functionality based on the temperature in that city (orange if warmer, blue if colder).",
+      "Basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather Api (link below) to return users the current temperature and weather conditions in their desired city.  Also features changing background color functionality based on the temperature in that city (orange if warmer, blue if colder).",
     toolsUsed: [
       {
         toolName: "HTML",
@@ -94,8 +94,8 @@ export const ProjectData = [
         link: "https://www.w3schools.com/react/react_state.asp",
       },
     ],
-    buttonLink: "https://weather-jw.herokuapp.com/",
-    githubLink: "https://github.com/J-Whisler/weather-react",
+    demoLink: "https://weather-jw.herokuapp.com/",
+    repoLink: "https://github.com/J-Whisler/weather-react",
     projectImage: Sunny,
     card: 1,
   },
@@ -105,7 +105,7 @@ export const ProjectData = [
     subName: "Simple Game",
     icon: faGamepad,
     description:
-      "This is my version of the classic game 'Rock, Paper, Scissors'.  Users are able compete against a computer opponent to see how high of a score they can get!  Score 1 point every time you win, and lose 1 point every time you lose.  Users can also reset the score at any time.",
+      "My version of the classic game 'Rock, Paper, Scissors'.  Users are able compete against a computer opponent to see how high of a score they can get!  Score 1 point every time you win, and lose 1 point every time you lose.  Users can also reset the score at any time.",
     toolsUsed: [
       {
         toolName: "CSS-Transitions",
@@ -120,8 +120,8 @@ export const ProjectData = [
         link: "https://reactjs.org/docs/hooks-intro.html",
       },
     ],
-    buttonLink: "https://rock-paper-scissors-jw.herokuapp.com/",
-    githubLink: "https://github.com/J-Whisler/rockpaperscissors",
+    demoLink: "https://rock-paper-scissors-jw.herokuapp.com/",
+    repoLink: "https://github.com/J-Whisler/rockpaperscissors",
     projectImage: RPS,
     card: 2,
   },
@@ -131,7 +131,7 @@ export const ProjectData = [
     subName: "Landing Page Recreation",
     icon: faTv,
     description:
-      "This is a recreation I did of the classic Netflix landing page.  This is something similar to what users would see when they enter the Netflix app for the first time, before they have created an account.  This landing page features a functioning tab section with different information about Netflix on each tab, similar to what you might see on the actual Netflix app.",
+      "A recreation I did of the classic Netflix landing page.  This is something similar to what users would see when they enter the Netflix app for the first time, before they have created an account.  This landing page features a functioning tab section with different information about Netflix on each tab, similar to what you might see on the actual Netflix app.",
     toolsUsed: [
       {
         toolName: "Styled-Components",
@@ -150,8 +150,8 @@ export const ProjectData = [
         link: "https://www.w3schools.com/js/js_htmldom_eventlistener.asp",
       },
     ],
-    buttonLink: "https://netflix-by-jw.herokuapp.com/",
-    githubLink: "https://github.com/J-Whisler/netflix-w-react",
+    demoLink: "https://netflix-by-jw.herokuapp.com/",
+    repoLink: "https://github.com/J-Whisler/netflix-w-react",
     projectImage: Netflix,
     card: 1,
   },

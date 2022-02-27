@@ -18,36 +18,46 @@ const About = () => {
             <p className="grid-left__paragraph">
               I am a 28 year old Front-End Web Developer and designer. I got my
               start into web development at the{" "}
-              <a href="https://bootcamp.case.edu/coding/" className="p-link">
+              <a
+                href="https://bootcamp.case.edu/coding/"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Case Western Reserve Coding Bootcamp
               </a>{" "}
               at{" "}
-              <a href="https://case.edu/" className="p-link">
+              <a
+                href="https://case.edu/"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 CWRU
               </a>{" "}
               in Cleveland, OH. I really enjoy creating visually pleasing
               webpages that are easy to use with tools such as{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 HTML
               </a>
               ,{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 CSS
               </a>
               ,{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 Javascript
               </a>
               , and{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 React
               </a>{" "}
               as well as different animation tools like{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 Framer Motion
               </a>{" "}
               and{" "}
-              <a href="" className="p-link">
+              <a href="" className="p-link" target="_blank" rel="noreferrer">
                 GSAP
               </a>{" "}
               to bring web pages to life.
@@ -176,13 +186,16 @@ const AboutContent = styled.div`
     .grid-right {
       padding-left: 6rem;
       .grid-right__image {
-        width: 100%;
+        width: 14rem;
+        height: 14rem;
+        object-fit: cover;
         border: 4px solid ${({ theme }) => theme.colors.secondary};
         border-radius: 100%;
         /* clip-path: circle(100% at 100% 100%); */
-        padding: 1.5rem 0.5rem;
+        /* padding: 1.5rem 0.5rem; */
         @media (max-width: 820px) {
-          width: 60%;
+          width: 14rem;
+          height: 14rem;
           margin-bottom: 2rem;
         }
       }

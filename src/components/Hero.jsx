@@ -53,7 +53,7 @@ const dotAnimation = keyframes`
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
 
-  padding: calc(8vw + 4rem) 7rem calc(7vw + 6rem);
+  padding: calc(5vw + 2rem) 7rem calc(7vw + 5rem);
 
   clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 93%, 30% 95%, 0 100%);
 
@@ -83,8 +83,7 @@ const HeroText = styled.header`
     font-size: calc(3vw + 2rem);
     margin-bottom: 0.2rem;
     letter-spacing: 0.1rem;
-    display: block;
-
+    text-shadow: 0 0 8px ${({ theme }) => theme.colors.bgDark};
     .main__jacob {
       font-size: calc(3vw + 3rem);
       color: ${({ theme }) => theme.colors.secondary};
@@ -97,6 +96,7 @@ const HeroText = styled.header`
     margin-bottom: 1rem;
     /* max-width: 70%; */
     line-height: 1.6;
+    text-shadow: 0 0 4px ${({ theme }) => theme.colors.bgDark};
   }
   .header__cleveland {
     color: ${({ theme }) => theme.colors.secondary};
