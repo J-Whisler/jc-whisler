@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <span className="bracket-icon icon">{"{}"}</span>
       <SectionHeader>About</SectionHeader>
       <SectionSubHeader>Who Am I?</SectionSubHeader>
@@ -90,7 +90,7 @@ const About = () => {
 
 const AboutContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgGrey};
-  margin-top: 5rem;
+  padding-top: 5rem;
   margin-bottom: 3.5rem;
   padding-left: 2rem;
   padding-right: 5rem;

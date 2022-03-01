@@ -2,7 +2,7 @@ export const SkillsData = [
   {
     id: 1,
     name: "HTML5",
-    subName: "Markup Language",
+    subName: "Web Markup",
     tags: [
       {
         name: "HTML5",
@@ -74,7 +74,7 @@ export const SkillsData = [
   {
     id: 5,
     name: "Animations",
-    subName: "Animating the Web",
+    subName: "Framer / GSAP",
     tags: [
       {
         name: "Framer-Motion",

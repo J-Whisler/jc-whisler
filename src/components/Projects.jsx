@@ -33,10 +33,11 @@ const ProjectsContainer = styled.div`
     0 100%,
     0 1%
   );
-  padding-top: 5rem;
+  padding: 5rem 2rem 2rem;
+  /* padding-top: 5rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 2rem; */
 `;
 
 const ProjectsContent = styled.div`
