@@ -5,7 +5,6 @@ import SectionSubHeader from "../subComponents/SectionSubHeader";
 
 import { ProjectData } from "../data/ProjectData";
 import ProjectCard from "../subComponents/ProjectCard";
-import ProjectCard2 from "../subComponents/ProjectCard2";
 
 const Projects = () => {
   return (

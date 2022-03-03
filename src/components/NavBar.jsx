@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import BurgerMenuButton from "../subComponents/BurgerMenuButton";
 import Logo from "../subComponents/Logo";
+import NavMenu from "../subComponents/NavMenu";
 import NavSocials from "../subComponents/NavSocials";
 
 const NavBar = () => {
+  const [burgerIsClicked, setBurgerIsClicked] = useState(false);
+
   return (
     <NavBarContainer>
-      <BurgerMenuButton />
+      <BurgerMenuButton
+        burgerIsClicked={burgerIsClicked}
+        setBurgerIsClicked={setBurgerIsClicked}
+      />
+      <NavMenu
+        burgerIsClicked={burgerIsClicked}
+        setBurgerIsClicked={setBurgerIsClicked}
+      />
       <Logo />
       <NavSocials />
     </NavBarContainer>
