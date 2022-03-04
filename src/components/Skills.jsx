@@ -8,7 +8,7 @@ import SkillCard from "../subComponents/SkillCard";
 
 const Skills = () => {
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <SectionHeader>Skills</SectionHeader>
       <SectionSubHeader>What Tools Do I Use?</SectionSubHeader>
       <SkillsContent>

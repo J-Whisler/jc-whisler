@@ -14,10 +14,13 @@ const NavBar = () => {
         burgerIsClicked={burgerIsClicked}
         setBurgerIsClicked={setBurgerIsClicked}
       />
-      <NavMenu
-        burgerIsClicked={burgerIsClicked}
-        setBurgerIsClicked={setBurgerIsClicked}
-      />
+      {burgerIsClicked && (
+        <NavMenu
+          burgerIsClicked={burgerIsClicked}
+          setBurgerIsClicked={setBurgerIsClicked}
+        />
+      )}
+
       <Logo />
       <NavSocials />
     </NavBarContainer>

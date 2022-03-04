@@ -19,27 +19,70 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-const NavMenu = () => {
+import { motion } from "framer-motion";
+
+const NavMenu = ({ setBurgerIsClicked }) => {
+  const MenuAnimation = {
+    hidden: {
+      x: "-50vh",
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 60,
+      },
+    },
+  };
+
   return (
-    <NavMenuContainer>
+    <NavMenuContainer variants={MenuAnimation} initial="hidden" animate="show">
       <NavMenuHeader>
-        <FontAwesomeIcon icon={faTimes} className="icon" />
+        <FontAwesomeIcon
+          icon={faTimes}
+          className="icon"
+          onClick={() => setBurgerIsClicked(false)}
+        />
         <h4 className="navigation">Navigation</h4>
       </NavMenuHeader>
       <NavMenuLinks>
-        <LinkS to="about" smooth="true" duration={1500} className="link">
+        <LinkS
+          to="about"
+          smooth="true"
+          duration={1500}
+          className="link"
+          onClick={() => setBurgerIsClicked(false)}
+        >
           <FontAwesomeIcon icon={faUser} className="icon" />
           About
         </LinkS>
-        <LinkS to="projects" smooth="true" duration={1500} className="link">
+        <LinkS
+          to="projects"
+          smooth="true"
+          duration={1500}
+          className="link"
+          onClick={() => setBurgerIsClicked(false)}
+        >
           <FontAwesomeIcon icon={faProjectDiagram} className="icon" />
           Projects
         </LinkS>
-        <LinkS to="skills" smooth="true" duration={1500} className="link">
+        <LinkS
+          to="skills"
+          smooth="true"
+          duration={1500}
+          className="link"
+          onClick={() => setBurgerIsClicked(false)}
+        >
           <FontAwesomeIcon icon={faTools} className="icon" />
           Skills
         </LinkS>
-        <LinkR to="/email" className="link">
+        <LinkR
+          to="/email"
+          className="link"
+          onClick={() => setBurgerIsClicked(false)}
+        >
           <FontAwesomeIcon icon={faEnvelope} className="icon" />
           Contact
         </LinkR>
@@ -87,7 +130,7 @@ const NavMenu = () => {
   );
 };
 
-const NavMenuContainer = styled.div`
+const NavMenuContainer = styled(motion.div)`
   position: absolute;
   top: 0;
   left: 0;

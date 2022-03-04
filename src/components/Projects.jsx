@@ -8,7 +8,7 @@ import ProjectCard from "../subComponents/ProjectCard";
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <SectionHeader>Projects</SectionHeader>
       <SectionSubHeader>What Do I Do?</SectionSubHeader>
       <ProjectsContent>

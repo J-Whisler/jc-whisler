@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const BurgerMenuButton = () => {
+const BurgerMenuButton = ({ setBurgerIsClicked }) => {
   return (
-    <BurgerMenuButtonContainer>
+    <BurgerMenuButtonContainer onClick={() => setBurgerIsClicked(true)}>
       <div className="left">
-        <div className="burgerLine"></div>
-        <div className="burgerLine"></div>
-        <div className="burgerLine"></div>
+        <div className="burgerLine line1"></div>
+        <div className="burgerLine line2"></div>
+        <div className="burgerLine line3"></div>
       </div>
       <p className="right">Navigation</p>
     </BurgerMenuButtonContainer>
@@ -29,11 +29,20 @@ const BurgerMenuButtonContainer = styled.div`
 
     margin-right: 0.5rem;
     .burgerLine {
-      width: 2rem;
       padding: 0.15rem 0;
       margin: 0.15rem 0;
       background: ${({ theme }) => theme.colors.accent};
       border-radius: 1rem;
+
+      &.line1 {
+        width: 1.6rem;
+      }
+      &.line2 {
+        width: 1.2rem;
+      }
+      &.line3 {
+        width: 2rem;
+      }
     }
   }
   .right {
