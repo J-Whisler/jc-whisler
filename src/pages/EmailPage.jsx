@@ -3,10 +3,12 @@ import styled from "styled-components";
 import ContactForm from "../components/ContactForm";
 import EmailPageNavBar from "../components/EmailPageNavBar";
 import envelope from "../assets/contact-left.png";
+import ParticleComponent from "../subComponents/ParticleComponent";
 
 const EmailPage = () => {
   return (
     <EmailPageContainer>
+      <ParticleComponent theme="theme2" />
       <EmailPageNavBar />
       <EmailPageContent>
         <div className="content__image">
@@ -32,10 +34,12 @@ const EmailPageContent = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   font-family: ${({ theme }) => theme.fonts.main};
+  margin-top: 1rem;
   .content__image {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .image {
       width: 70%;
     }
@@ -44,7 +48,8 @@ const EmailPageContent = styled.div`
     display: flex;
     flex-direction: column;
 
-    padding: 0 7rem;
+    padding: 0 5rem;
+    margin-right: 2rem;
   }
   @media (max-width: 820px) {
     display: grid;

@@ -113,9 +113,9 @@ const FooterGrid = styled.div`
     font-size: 1.2rem;
   }
   @media (max-width: 1000px) {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+    align-items: center;
     .grid__left {
       justify-content: center;
     }
@@ -206,10 +206,16 @@ const GridRight = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media (max-width: 1000px) {
+    align-items: flex-start;
+    /* align-items: center; */
+    margin-left: 0.5rem;
+  }
   .right__linksContainer {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    margin-left: 0.5rem;
     .link {
       color: ${({ theme }) => theme.colors.bgDark};
       background: ${({ theme }) => theme.colors.secondary};

@@ -4,9 +4,12 @@ import styled from "styled-components";
 import { faLocationPin, faCode } from "@fortawesome/free-solid-svg-icons";
 import { keyframes } from "styled-components";
 
+import ParticleComponent from "../subComponents/ParticleComponent";
+
 const Hero = () => {
   return (
     <HeroContainer>
+      <ParticleComponent theme="theme1" />
       <span className="code-icon icon">{"</>"}</span>
       <HeroText>
         <h2 className="header__main">

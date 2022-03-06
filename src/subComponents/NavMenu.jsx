@@ -136,13 +136,19 @@ const NavMenuContainer = styled(motion.div)`
   left: 0;
 
   height: 100vh;
-  width: 50vw;
+  width: 40vw;
 
   border: 2px solid ${({ theme }) => theme.colors.secondary};
   border-radius: 0 0.7rem 0.7rem 0;
   background: ${({ theme }) => theme.colors.bgDark};
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.fonts.main};
+  @media (max-width: 820px) {
+    width: 60vw;
+  }
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
 `;
 
 const NavMenuHeader = styled.div`
@@ -219,10 +225,10 @@ const NavMenuDivider = styled.span`
 const NavMenuSocials = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-  }
+  } */
 `;
 
 const SocialLink = styled.a`

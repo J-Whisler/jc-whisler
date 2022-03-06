@@ -72,7 +72,9 @@ const ContactForm = () => {
   );
 };
 
-const ContactFormContainer = styled.div``;
+const ContactFormContainer = styled.div`
+  z-index: 1000;
+`;
 
 const Form = styled.form`
   display: flex;
