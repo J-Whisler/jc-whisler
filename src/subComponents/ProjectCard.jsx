@@ -89,10 +89,10 @@ const ProjectCardContainer = styled.div`
   @media (max-width: 820px) {
     display: flex;
     justify-content: center;
+    padding: 0 2rem;
   }
 `;
 const ProjectCardInnerContainer = styled.div`
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
   &.card1 {
@@ -108,7 +108,7 @@ const ProjectCardInnerContainer = styled.div`
     }
   }
   @media (max-width: 820px) {
-    width: fit-content;
+    /* width: fit-content; */
     &.card1 {
       flex-direction: column;
       .image {
@@ -119,6 +119,9 @@ const ProjectCardInnerContainer = styled.div`
       flex-direction: column;
     }
   }
+  @media (max-width: 520px) {
+    margin: 0 1rem;
+  }
 `;
 const ProjectImageWrapper = styled.div`
   .image {
@@ -128,9 +131,10 @@ const ProjectImageWrapper = styled.div`
   }
 `;
 const ProjectInfoWrapper = styled.div`
-  /* border: 2px solid white; */
-  width: 30rem;
   font-family: ${({ theme }) => theme.fonts.main};
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 const Divider = styled.div`
   display: flex;

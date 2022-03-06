@@ -47,6 +47,9 @@ const BurgerMenuButtonContainer = styled.div`
   }
   .right {
     font-size: 1.2rem;
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 `;
 

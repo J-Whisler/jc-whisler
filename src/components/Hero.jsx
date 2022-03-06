@@ -73,6 +73,9 @@ const HeroContainer = styled.div`
 
     transform: rotate(0.1turn);
   }
+  @media (max-width: 500px) {
+    padding: calc(5vw + 2rem) 2rem calc(7vw + 5rem);
+  }
 `;
 
 const HeroText = styled.header`
@@ -91,6 +94,12 @@ const HeroText = styled.header`
       font-size: calc(3vw + 3rem);
       color: ${({ theme }) => theme.colors.secondary};
       letter-spacing: 0.5rem;
+      @media (max-width: 400px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 330px) {
+        font-size: 2.5rem;
+      }
     }
   }
   .header__sub {

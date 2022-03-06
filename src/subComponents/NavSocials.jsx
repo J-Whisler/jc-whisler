@@ -51,6 +51,9 @@ const NavSocialsContainer = styled.div`
       box-shadow: 1px 1px 2px ${({ theme }) => theme.colors.accent};
     }
   }
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export default NavSocials;

@@ -32,6 +32,7 @@ const HomePage = () => {
 const HomePageContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgGrey};
   height: fit-content;
+  overflow-x: hidden;
 `;
 
 export default HomePage;
