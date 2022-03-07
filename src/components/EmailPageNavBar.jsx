@@ -48,6 +48,10 @@ const HomeButton = styled(Link)`
   padding: 0.5rem 1rem;
 
   transition: all 0.1s linear;
+  @media  {
+    font-size: 1.1rem;
+  }
+  )
   .icon {
   }
   &:hover {
