@@ -27,6 +27,7 @@ const EmailPage = () => {
 const EmailPageContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
   min-height: 100vh;
+  width: 100vw;
   padding-bottom: 2rem;
   overflow-x: hidden;
 `;
@@ -37,6 +38,7 @@ const EmailPageContent = styled.div`
   align-items: center;
   font-family: ${({ theme }) => theme.fonts.main};
   margin-top: 1rem;
+  width: 100%;
   .content__image {
     display: flex;
     justify-content: center;
