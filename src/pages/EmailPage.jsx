@@ -28,6 +28,7 @@ const EmailPageContainer = styled.div`
   background: ${({ theme }) => theme.colors.bgDark};
   min-height: 100vh;
   padding-bottom: 2rem;
+  overflow-x: hidden;
 `;
 
 const EmailPageContent = styled.div`
