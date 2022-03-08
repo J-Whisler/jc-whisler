@@ -54,6 +54,12 @@ const EmailPageContent = styled.div`
 
     padding: 0 5rem;
     margin-right: 2rem;
+    @media (max-width: 500px) {
+      padding: 0 1.5rem;
+    }
+    @media (max-width: 350px) {
+      padding: 0 0.5;
+    }
   }
   @media (max-width: 1000px) {
     display: grid;

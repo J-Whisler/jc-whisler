@@ -218,8 +218,8 @@ const InfoButtons = styled.div`
         margin-left: 0.3rem;
       }
       @media (max-width: 450px) {
-        font-size: 1rem;
-        margin: 0.2rem 0.5rem;
+        font-size: 1.05rem;
+        margin: 0.2rem 0.4rem;
         .cardButton__icon {
           margin-left: 0.2rem;
         }
