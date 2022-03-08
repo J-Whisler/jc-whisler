@@ -33,6 +33,7 @@ const ParticleComponentContainer = styled.div`
   left: 0;
   bottom: 0;
   z-index: 0;
+  height: 100vh;
 `;
 
 export default ParticleComponent;
