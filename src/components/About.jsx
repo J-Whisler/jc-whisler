@@ -124,6 +124,7 @@ const AboutContainer = styled.div`
   margin-bottom: 3.5rem;
   padding-left: 2rem;
   padding-right: 5rem;
+  z-index: 1000000;
 
   /* border: 2px solid white; */
   .bracket-icon {
