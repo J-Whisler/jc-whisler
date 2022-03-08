@@ -124,7 +124,6 @@ const AboutContainer = styled.div`
   margin-bottom: 3.5rem;
   padding-left: 2rem;
   padding-right: 5rem;
-  z-index: 1000000;
 
   /* border: 2px solid white; */
   .bracket-icon {
@@ -169,6 +168,8 @@ const AboutContent = styled.div`
           color: ${({ theme }) => theme.colors.secondary};
           text-decoration: none;
           transition: all 0.3s ease-in-out;
+          z-index: 1000000;
+
           &:hover {
             opacity: 0.6;
           }
@@ -189,6 +190,7 @@ const AboutContent = styled.div`
           font-family: ${({ theme }) => theme.fonts.main};
           font-size: 1.2rem;
           transition: all 0.3s linear;
+          z-index: 1000000;
         }
         .link-borderBottom {
           border: 2px solid ${({ theme }) => theme.colors.accent};
