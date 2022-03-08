@@ -29,6 +29,7 @@ const Hero = () => {
           <div className="scrollIcon__dot dot2"></div>
           <div className="scrollIcon__dot dot3"></div>
         </div>
+        <span className="iconText">scroll for more</span>
       </ScrollIcon>
     </HeroContainer>
   );
@@ -169,6 +170,13 @@ const ScrollIcon = styled.div`
       animation-iteration-count: infinite;
       animation-delay: 0.3s;
     }
+  }
+  .iconText {
+    color: ${({ theme }) => theme.colors.text};
+    opacity: 0.5;
+    font-family: ${({ theme }) => theme.fonts.main};
+    font-size: 0.78rem;
+    margin-top: 0.5rem;
   }
 `;
 

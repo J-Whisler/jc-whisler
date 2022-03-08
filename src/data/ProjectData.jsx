@@ -71,7 +71,7 @@ export const ProjectData = [
     subName: "Weather Application",
     icon: faSun,
     description:
-      "Basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather Api to return users the current temperature and weather conditions in their desired city.  Also features changing background color functionality based on the temperature in that city (orange if warmer, blue if colder).",
+      "A basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather API to return users the current temperature and weather conditions in their desired city.  Sunny will also give users a blue background if it's currently cold in their seached city, and orange if it's warm.",
     toolsUsed: [
       {
         toolName: "HTML",
@@ -131,7 +131,7 @@ export const ProjectData = [
     subName: "Landing Page Recreation",
     icon: faTv,
     description:
-      "A recreation I did of the classic Netflix landing page.  This is something similar to what users would see when they enter the Netflix app for the first time, before they have created an account.  This landing page features a functioning tab section with different information about Netflix on each tab, similar to what you might see on the actual Netflix app.",
+      "A recreation I did of the classic Netflix landing page.  It looks similar to what users would see when they enter the Netflix app for the first time, before they have created an account.  This landing page features a functioning tab section with different information about Netflix on each tab, similar to what you might see on the actual Netflix app.",
     toolsUsed: [
       {
         toolName: "Styled-Components",
