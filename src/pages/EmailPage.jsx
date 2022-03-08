@@ -29,7 +29,7 @@ const EmailPageContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
   padding-bottom: 2rem;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 const EmailPageContent = styled.div`
