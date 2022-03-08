@@ -9,12 +9,26 @@ const NavSocials = () => {
     <NavSocialsContainer>
       <div className="links">
         <div className="links__container social">
-          <FontAwesomeIcon icon={faGithubSquare} className="icon" />
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          <a
+            href="https://github.com/J-Whisler"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithubSquare} className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jacobwhisler/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          </a>
         </div>
         <div className="links__divider"></div>
         <div className="links__container resume">
-          <FontAwesomeIcon icon={faFileAlt} className="icon" />
+          <a href="/">
+            <FontAwesomeIcon icon={faFileAlt} className="icon" />
+          </a>
         </div>
       </div>
     </NavSocialsContainer>

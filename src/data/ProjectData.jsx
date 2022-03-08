@@ -17,7 +17,7 @@ export const ProjectData = [
     subName: "Social Media/Blogging Application",
     icon: faHashtag,
     description:
-      "A full stack social media/blog site for the Cleveland running community.  It features a login and user authentication system that then allows users to share/delete posts and see other user's posts in which they can like or comment on any post.  Also able to unlike post and delete posts/comments that you made.  Also features a user profile page.",
+      "A full stack social media site for the Cleveland running community. The site features a user authentication system that allows members to have full social media capabilities, such as posting, liking, and more. The application automatically creates a profile page for each user to track interactions with the site and other users.",
     toolsUsed: [
       {
         toolName: "React",
@@ -71,7 +71,7 @@ export const ProjectData = [
     subName: "Weather Application",
     icon: faSun,
     description:
-      "Basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather Api (link below) to return users the current temperature and weather conditions in their desired city.  Also features changing background color functionality based on the temperature in that city (orange if warmer, blue if colder).",
+      "Basic weather application where users can enter the name of a city that they want to know the current weather for.  This app utilizes the Open Weather Api to return users the current temperature and weather conditions in their desired city.  Also features changing background color functionality based on the temperature in that city (orange if warmer, blue if colder).",
     toolsUsed: [
       {
         toolName: "HTML",
@@ -105,7 +105,7 @@ export const ProjectData = [
     subName: "Simple Game",
     icon: faGamepad,
     description:
-      "My version of the classic game 'Rock, Paper, Scissors'.  Users are able compete against a computer opponent to see how high of a score they can get!  Score 1 point every time you win, and lose 1 point every time you lose.  Users can also reset the score at any time.",
+      "My version of the classic game 'Rock, Paper, Scissors'.  Users are able compete against a computer opponent to see how high of a score they can get!  Score 1 point every time you win, and lose 1 point every the computer wins.  Users can also reset the score at any time.",
     toolsUsed: [
       {
         toolName: "CSS-Transitions",

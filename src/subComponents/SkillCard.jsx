@@ -32,7 +32,12 @@ const SkillCard = ({ skill }) => {
           <ul className="tags__list">
             {tags.map((tag) => (
               <li className="list__item">
-                <a href={tag.url} className="item__link">
+                <a
+                  href={tag.url}
+                  className="item__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {tag.name}
                 </a>
               </li>

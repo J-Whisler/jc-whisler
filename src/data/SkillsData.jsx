@@ -24,11 +24,11 @@ export const SkillsData = [
       },
       {
         name: "SASS",
-        url: "",
+        url: "https://sass-lang.com/",
       },
       {
         name: "Styled-Components",
-        url: "",
+        url: "https://styled-components.com/",
       },
     ],
     yearsUsed: 2,
@@ -46,11 +46,11 @@ export const SkillsData = [
       },
       {
         name: "ES6",
-        url: "",
+        url: "https://medium.com/@hossam.hilal0/what-is-es6-1d860c4dacf8",
       },
       {
         name: "API's",
-        url: "",
+        url: "https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces",
       },
     ],
     yearsUsed: 2,

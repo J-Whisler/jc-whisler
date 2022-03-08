@@ -22,11 +22,21 @@ const Footer = () => {
         <GridLeft className="grid__left">
           <h6 className="left__header header">Social Links: </h6>
           <div className="left__linksContainer">
-            <a href="" className="link" target="_blank">
+            <a
+              href="https://github.com/J-Whisler"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
               <FontAwesomeIcon icon={faInstagramSquare} className="icon" />{" "}
               Instagam
             </a>
-            <a href="" className="link" target="_blank">
+            <a
+              href="https://twitter.com/JacobWhisler521"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitterSquare} className="icon" />{" "}
               Twitter
             </a>
@@ -36,11 +46,21 @@ const Footer = () => {
           <h6 className="middle__header header">Professional Links: </h6>
           <div className="middle__linksContainer">
             <div className="linksContainer__pro">
-              <a href="" target="_blank" className="link">
+              <a
+                href="https://github.com/J-Whisler"
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
                 <FontAwesomeIcon icon={faGithubSquare} className="icon" />{" "}
                 Github
               </a>
-              <a href="" target="_blank" className="link">
+              <a
+                href="https://www.linkedin.com/in/jacobwhisler/"
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
                 <FontAwesomeIcon icon={faLinkedin} className="icon" /> LinkedIn
               </a>
             </div>

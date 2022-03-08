@@ -217,6 +217,13 @@ const InfoButtons = styled.div`
       .cardButton__icon {
         margin-left: 0.3rem;
       }
+      @media (max-width: 450px) {
+        font-size: 1rem;
+        margin: 0.2rem 0.5rem;
+        .cardButton__icon {
+          margin-left: 0.2rem;
+        }
+      }
     }
     &:hover {
       background: ${({ theme }) => theme.colors.bgDark};

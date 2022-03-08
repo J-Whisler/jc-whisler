@@ -17,7 +17,7 @@ const About = () => {
           <div className="grid-left">
             <p className="grid-left__paragraph">
               I am a 28 year old Front-End Web Developer and designer. I got my
-              start into web development at the{" "}
+              start in web development at the{" "}
               <a
                 href="https://bootcamp.case.edu/coding/"
                 className="p-link"
@@ -35,29 +35,59 @@ const About = () => {
               >
                 CWRU
               </a>{" "}
-              in Cleveland, OH. I really enjoy creating visually pleasing
-              webpages that are easy to use with tools such as{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              in Cleveland, OH. I enjoy creating visually pleasing webpages that
+              are easy to use with tools such as{" "}
+              <a
+                href="https://www.hostinger.com/tutorials/what-is-html"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 HTML
               </a>
               ,{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 CSS
               </a>
               ,{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Javascript
               </a>
               , and{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://reactjs.org/"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 React
-              </a>{" "}
-              as well as different animation tools like{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              </a>
+              . I also specialize in different animation tools like{" "}
+              <a
+                href="https://www.framer.com/motion/"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Framer Motion
               </a>{" "}
               and{" "}
-              <a href="" className="p-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://greensock.com/gsap/"
+                className="p-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GSAP
               </a>{" "}
               to bring web pages to life.
@@ -69,7 +99,7 @@ const About = () => {
             </p>
 
             <div className="grid-left__button">
-              <Link to="/contact" className="link">
+              <Link to="/email" className="link">
                 Get In Touch...
               </Link>
               <span className="link-borderBottom"></span>
