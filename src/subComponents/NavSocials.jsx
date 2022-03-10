@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import resume from "../assets/JacobWhislerResume.docx";
 
 const NavSocials = () => {
   return (
@@ -26,7 +27,7 @@ const NavSocials = () => {
         </div>
         <div className="links__divider"></div>
         <div className="links__container resume">
-          <a href="/">
+          <a href={resume} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFileAlt} className="icon" />
           </a>
         </div>

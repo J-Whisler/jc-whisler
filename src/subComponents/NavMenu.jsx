@@ -18,6 +18,7 @@ import {
   faLinkedin,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import resume from "../assets/JacobWhislerResume.pdf";
 
 import { motion } from "framer-motion";
 
@@ -117,7 +118,7 @@ const NavMenu = ({ setBurgerIsClicked }) => {
           LinkedIn
         </SocialLink>
         <SocialLink
-          href="/"
+          href={resume}
           target="_blank"
           rel="noreferrer"
           className="socialLink"

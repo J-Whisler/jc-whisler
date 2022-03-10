@@ -11,6 +11,7 @@ import {
 import { faFileAlt, faShare } from "@fortawesome/free-solid-svg-icons";
 import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
+import resume from "../assets/JacobWhislerResume.pdf";
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
           <h6 className="left__header header">Social Links: </h6>
           <div className="left__linksContainer">
             <a
-              href="https://github.com/J-Whisler"
+              href="https://www.instagram.com/jacob_whisler/"
               target="_blank"
               rel="noreferrer"
               className="link"
@@ -66,7 +67,7 @@ const Footer = () => {
             </div>
             <MiddleLinksDivider />
             <div className="linksContainer__resume">
-              <a href="" target="_blank" className="link">
+              <a href={resume} target="_blank" className="link">
                 <FontAwesomeIcon icon={faFileAlt} className="icon" /> Resume
               </a>
             </div>
